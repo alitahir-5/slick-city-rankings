@@ -6,7 +6,7 @@ Weekly Google Search local pack rankings (positions 1 to 20 in Google's Places l
 - `DATAFORSEO_AUTH`: base64 of `login:password` (shown on DataForSEO's API Access page as "Base64 format").
 - `APP_PASSWORD`: team password for the login page (defaults to `admate`).
 - `CRON_SECRET`: any random string; Vercel sends it to the cron routes.
-- `BLOB_READ_WRITE_TOKEN`: added automatically when you connect a Vercel Blob store.
+- `BLOB_STORE_ID`: added automatically when you connect the private Vercel Blob store (the app signs in with Vercel OIDC).
 
 ## Schedule (vercel.json)
 - Monday 04:45 UTC: `/api/cron/post` queues all searches.
